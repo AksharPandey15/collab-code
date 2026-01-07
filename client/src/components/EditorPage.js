@@ -114,7 +114,7 @@ function EditorPage() {
     setIsCompiling(true);
     setIsTerminalOpen(true);
     try {
-      const response = await axios.post("http://localhost:12345/compile", {
+      const response = await axios.post("https://cllbcdeserver.vercel.app/compile", {
         code: codeRef.current,
         language: selectedLanguage,
       });
