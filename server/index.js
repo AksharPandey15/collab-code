@@ -32,13 +32,13 @@ const languageConfig = {
 };
 
 // ======= Middleware =======
-app.use(cors({ origin: "http://localhost:3000", methods: ["GET", "POST"] }));
+app.use(cors({ origin: "https://collab-code-inky.vercel.app/", methods: ["GET", "POST"] }));
 app.use(express.json());
 
 // ======= Socket.IO Setup =======
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://collab-code-inky.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
