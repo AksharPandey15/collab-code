@@ -114,7 +114,7 @@ function EditorPage() {
     setIsCompiling(true);
     setIsTerminalOpen(true);
     try {
-      const response = await axios.post("http://collab-code-x3r0.onrender.com/compile", {
+      const response = await axios.post("https://collab-code-x3r0.onrender.com/compile", {
         code: codeRef.current,
         language: selectedLanguage,
       });
